@@ -2,25 +2,38 @@ extends layout
 
 block content  
   div(class="navbar navbar-default navbar-fixed-top")
-      div(class="container")
-        div(class="navbar-header")
-          button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
-            span(class="icon-bar")
-            span(class="icon-bar")
-            span(class="icon-bar")                  
-        div(class="navbar-collapse collapse")
-          ul(class="nav navbar-nav")
-            li(class="")
-              a(href="#where") where
-            li(class="")
-              a(href="#why") why           
-            li(class="")
-              a(href="#who") who
-            li(class="")
-              a(href="#lessons") lessons          
+    div(class="container")
+      div(class="navbar-header")
+        button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")                  
+      div(class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li(class="")
+            a(href="#where") where
+          li(class="")
+            a(href="#why") why           
+          li(class="")
+            a(href="#who") who
+          li(class="")
+            a(href="#lessons") lessons          
 
- 
+  div(class="hero") BitsToBerlin<br>.com
 
+  div(id="where", class="meat")
+    h1 where are we going?
+    div(id="yerevan", class="city")
+      h2 7/8 - 7/25 yerevan, armenia
+      p Vache's place of birth, Yerevan is our first stop and the homebase for our companies.
+  
+  div(id="why", class="meat")
+    h1 why the 10 cities?
+    p Stuck in our New York Bubble, we came to the realization that there is a world out there, a whole new set of problems and solutions that we need to learn about.
+  
+  div(id="who", class="meat")
+    h1 who we are?
+    p Pasha Riger and Vache Asatryan 
 
   script(type="text/javascript", src="javascripts/bootstrap.min.js")
   

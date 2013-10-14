@@ -1,37 +1,143 @@
 /* @override http://localhost:5000/stylesheets/style.css */
+body {
+	min-height: 2000px;
+	padding-top: 70px;
+}
 
-body{
+.hero {
+	width: 60%;
+	margin: 0 20%;	
+	/*text-indent: -9999em;*/
+	height: 600px;
+	/*background: url(../_img/logo.png) no-repeat center center fixed; */
+  -webkit-background-size: 50% ;
+  -moz-background-size: 50% ;
+  -o-background-size: 50% ;
+  background-size: 50% ;
+  border-bottom: 5px black solid;
+  font-size: 100px; 
+  overflow: hidden;
+  word-wrap: break-word;
+  font-weight: 800;
+  word-spacing: -1px;
+  letter-spacing: -3px;
+
+}
+
+div.navbar.navbar-default.navbar-fixed-top {
+	background-color: white;
+	border-bottom: 2px solid black;	
+}
+
+.nav > li {
+	background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a{
+	text-transform: lowercase;
+	font-size: 20px;
+	border-bottom: 2px solid white;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: white;
+	border-bottom: 2px solid black;
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+	background-color: white;
+	border-bottom: 2px solid black;
+}
+
+
+.meat {
+	width: 60%;
+	margin: 0 20%;		
+	min-height: 300px;
+	border-bottom: 5px black solid;
+	  -webkit-background-size: 50% ;
+  -moz-background-size: 50% ;
+  -o-background-size: 50% ;
+  background-size: 50% ;
+
+}
+
+
+.meat h1{
+	text-align: left;
+}
+
+.company{
+	border-bottom: solid 1px black;
+	position: relative;
 	
-	margin: 0px;
-	padding: 0px;
+}
+.company p{
+	margin-bottom: 20px;	
 }
 
-#blog ol{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;	
-}
-#blog ol li{
-	min-width: 100%;
-	min-height: 200px;
-	padding-bottom: 80px;
-	border-bottom: 1px solid #efefef;	
-	border-top: 2px solid #d6d6d6;
-	background: url(../images/yerevan-web.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.company a{
+	margin-bottom: 20px;	
+	color: black;
+	font-size: 40px;
+	position: absolute;
+	right: 10px;
+	top: 15px;
 }
 
-#blog ol li h1{
-	margin: 0px;
-	padding: 0px;
+ 
+.company:last-child{
+	border: none;
+	
 }
 
-#blog ol li blockquote{
-	margin: 0px;
-	padding: 0px;
+#traits h2{
+	text-indent: -9999em; 
+	background-size: 200px auto;
+	background: url(../_img/trait-logo.png) no-repeat left;
+	min-height: 100px;
+	  -webkit-background-size: 200px auto;
+  -moz-background-size: 200px auto;
+  -o-background-size: 200px auto;
+  background-size: 200px auto;
+
+}
+
+#dendrite h2{
+	text-indent: -9999em; 
+	background-size: 200px auto;
+	background: url(../_img/dendrite-logo.png) no-repeat left;
+	min-height: 100px;
+		  -webkit-background-size: 200px auto;
+  -moz-background-size: 200px auto;
+  -o-background-size: 200px auto;
+  background-size: 200px auto;
+}
+
+#armenia.meat{
+	min-height: 100px;
+}
+
+#armenia p{
+	font-size: 45px;
+	text-align: left;
+}
+
+
+#map.meat{
 	border: none;
 }
+
+#map.meat h1{
+	text-align: center;
+}
+
+
+
+
+
+
+
 
