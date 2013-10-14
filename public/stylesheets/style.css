@@ -1,0 +1,37 @@
+/* @override http://localhost:5000/stylesheets/style.css */
+
+body{
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+#blog ol{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;	
+}
+#blog ol li{
+	min-width: 100%;
+	min-height: 200px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #efefef;	
+	border-top: 2px solid #d6d6d6;
+	background: url(../images/yerevan-web.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#blog ol li h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+#blog ol li blockquote{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
