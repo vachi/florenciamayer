@@ -3,7 +3,7 @@
 !function ($) {
     $(function(){
 
-        var $root = $('html, body');
+        var $root = $(window);
 
         $('.navbar-nav a').click(function() {
             var href = $.attr(this, 'href');

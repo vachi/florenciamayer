@@ -5,21 +5,15 @@ body {
 	padding-top: 53px;
 }
 
-
-
 .hero {
 	width: 100%;
-
-	/*text-indent: -9999em;*/
-	height: 600px;
-	background: url(../images/top-bg.png) repeat-x; 
-  border-bottom: 5px #a31d21 solid;
-  font-size: 100px; 
-  overflow: hidden;
-  word-wrap: break-word;
-  font-weight: 800;
-  word-spacing: -1px;
-  letter-spacing: -3px;
+	height: 600px;	  	
+  	font-size: 100px; 
+  	overflow: hidden;
+  	word-wrap: break-word;
+  	font-weight: 800;
+  	word-spacing: -1px;
+  	letter-spacing: -3px;
 	text-align: center;
 	position: relative;
 }
