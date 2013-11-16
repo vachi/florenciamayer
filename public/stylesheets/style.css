@@ -22,7 +22,7 @@ p, a{
 	color: #9a8d79;	
 }
 
-h1, h2,h3,h4,h5{
+h1, h2,h3,h4,h5, blockquote{
 	font-family: 'Modern-Regular';
 	color: #9a8d79;		
 }
@@ -101,6 +101,16 @@ ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li.active a{
 	
 }
 
+.meat blockquote{
+	font-style: italic;
+	font-size: 30px;
+	font-weight: 100;
+	border: none;
+}
+
+
+
+
 .meat h1{
 	text-align: left;
 	border-bottom: 1px solid #9a8d79;
@@ -115,6 +125,24 @@ ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li.active a{
 	text-indent: 20%;
 	
 }
+
+.meat h3{
+	text-align: left;
+	border-bottom: 1px solid #9a8d79;
+	padding-bottom: 0px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.meat hr{
+	border-color: #9a8d79;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 
 @media (max-width: 768px) {
 	.navbar-brand{
@@ -145,3 +173,72 @@ ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li.active a{
 		margin-top: 20px;
 	}
 }
+
+
+
+.carousel{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.carousel-indicators li{
+	background-color: rgba(255,255,255,0.51);
+	border-color: #7c7161;
+}
+
+.carousel-indicators li.active{
+	background-color: #9a8d79;
+	border-color: #7c7161;
+}
+
+.carousel-inner .item.introItem div{
+	float: left;
+	width: 58%;
+	margin-right: 2%;
+}
+
+.carousel-inner .item.introItem div h4{
+	font-size: 30px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid rgba(188,172,149,0.54);
+	padding-bottom: 10px;
+}
+.carousel-inner .item.introItem h5{
+	font-size: 14px;
+	margin-top: 4px;
+	font-style: italic;
+	text-decoration: none;
+	float: right;
+}
+
+.carousel-inner .item.introItem div p{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.carousel-inner .item.introItem img{
+	float: left;
+	width: 40%;
+}
+
+.carousel-inner .item.imgGrid img{
+	float: left;
+}
+
+.carousel-inner .item.imgGrid .carousel-caption{
+	text-align: center;	
+	float: left;
+	width: 40%;
+	margin: 0px;
+	height: ;
+	color: #9a8d79;
+	text-shadow: none;
+	position: relative;
+	left: auto;
+	right: auto;
+	top: 0px;
+	padding: 40px 20px 20px;
+	
+}
+
+
