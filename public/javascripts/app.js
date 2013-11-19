@@ -12,5 +12,7 @@
 
     $('.carousel').carousel('pause');
 
+    $("img").unveil();
+
 }(window.jQuery)
 
