@@ -1,5 +1,8 @@
 /* @override http://localhost:5000/stylesheets/style.css */
 
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
 @font-face {
 		font-family: 'Modern-Regular', 'Georgia', serif;
 		src: url('../fonts/modernno20.eot');
@@ -12,11 +15,6 @@
 }
 
 
-body {
-	min-height: 2000px;
-	padding-top: 53px;
-}
-
 p, a{
 	font-family: "Georgia", serif;
 	color: #9a8d79;	
@@ -27,218 +25,187 @@ h1, h2,h3,h4,h5, blockquote{
 	color: #9a8d79;		
 }
 
-.container{
-	padding-right:5px;
-	padding-left:5px;
-	margin-right:auto;
-	margin-left:auto;
+
+.navbar{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 180px;
+	z-index: 3;
+	background: white;	
+	border-right: 1px solid #efefef;
+}
+.navbar ul{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+.navbar ul li{
+	margin-top: 10px;
 }
 
-.hero {
-	width: 100%;
-	height: 600px;	  	
-  	font-size: 100px; 
-  	overflow: hidden;
-  	word-wrap: break-word;
+
+.navbar a{
+	text-decoration: none;
+}
+
+.navbar a:hover{
+	text-decoration: underline;
+}
+
+article{
+	margin-left: 180px;
+	overflow: hidden;
+}
+
+article > div{
+	width: 98%;
+	margin: 0 auto;
+} 
+
+article .section{
+	border-bottom: 1px solid #efefef;
+	margin-bottom: 20px;
+	opacity: .4;
+}
+
+article .section.active{
+	opacity: 1;
+}
+
+
+
+.hero{
 	text-align: center;
-	position: relative;
 }
-
 
 .hero img{
-	text-align: center;
-	margin-top: 200px;
 	width: 60%;
+	margin-top: 20%;
+}
+
+@media (max-width: 460px) {
+	.hero img{
+		width: 90%;
+		margin-top: 50%;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero img{
+		width: 90%;
+		margin-top: 100%;
+	}
 }
 
 
-.navbar-brand{
-	text-indent: 9999em;
-	width: 200px;
-	overflow: hidden;
-	background: url(../images/logolarge.png) no-repeat center;
-	background-size: 155px auto;
-	padding: 0px;
-	display: block;
-	line-height: 50px;	
-}
-
-ul.nav.navbar-nav li a{
-	color: #9a8d79;
-	border-bottom: 1px solid rgba(0,0,0,0);
-}
-
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
-	background: none;
-}
-
-ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li.active a{
-	color: #766d5e;
-	border-bottom: 1px solid #9a8d79;
+.section h1{
+	font-size: 30px;	
+	margin-bottom: 15px;
 }
 
 
-
-
-.meat {
-	width: 100%;
-	min-height: 300px;
-	float: left;
-}
-
-
-
-.meat > *{
-	width: 60%;
-	margin: 0 20%;
-}
-
-.meat p{
-	margin-bottom: 10px;
-	margin-top: 10px;
-	line-height: 30px;
-	font-size: 20px;
-	
-}
-
-.meat blockquote{
-	font-style: italic;
-	font-size: 30px;
-	font-weight: 100;
-	border: none;
-}
-
-
-
-
-.meat h1{
-	text-align: left;
-	border-bottom: 1px solid #9a8d79;
-	padding-bottom: 0px;
-	line-height: 19px;
-	font-size: 37px;
-	letter-spacing: 1px;
-	width: 100%;
-	margin: 0px;
-	margin-top: 100px;
-	margin-bottom: 20px;
-	text-indent: 20%;
-	
-}
-
-.meat h3{
-	text-align: left;
-	border-bottom: 1px solid #9a8d79;
-	padding-bottom: 0px;
-	line-height: 14px;
-	letter-spacing: 1px;
-	margin-top: 40px;
-	margin-bottom: 10px;
-	font-size: 25px;
-}
-
-.meat hr{
-	border-color: #9a8d79;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.section p{
+	font-size: 20px;	
+	line-height: 25px;
 }
 
 
 @media (max-width: 768px) {
-	.navbar-brand{
-		width: 100%;
-		position: absolute;
-		padding: 0px;
-		z-index: -1;
-	}
-
-	.meat > *{
-		width: 90%;
-		margin: 0 5%;
-	}
-
-	.hero img{
-		text-align: center;
-		margin-top: 200px;
-		width: 90%;
-	}
-
-	.hero small{
-		font-size: 20px;
-		letter-spacing: 1px;
-		margin-left: 0px;
-		display: block;
-		text-align: center;
-		margin-bottom: -80px;
-		margin-top: 20px;
+	.section > *{
+		padding-left: 20px;		
+		padding-right: 20px;				
 	}
 }
 
 
 
-.carousel{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.carousel-indicators li{
-	background-color: rgba(255,255,255,0.51);
-	border-color: #7c7161;
-}
-
-.carousel-indicators li.active{
-	background-color: #9a8d79;
-	border-color: #7c7161;
-}
-
-.carousel-inner .item.introItem div{
+.tile{
+	width: 28%;
+	margin: 10px;
+	padding: 15px;
+	border: 1px solid #efefef;
+	display: inline;
 	float: left;
-	width: 58%;
-	margin-right: 2%;
-}
-
-.carousel-inner .item.introItem div h4{
-	font-size: 30px;
-	margin-bottom: 0px;
-	border-bottom: 1px solid rgba(188,172,149,0.54);
-	padding-bottom: 10px;
-}
-.carousel-inner .item.introItem h5{
-	font-size: 14px;
-	margin-top: 4px;
-	font-style: italic;
-	text-decoration: none;
-	float: right;
-}
-
-.carousel-inner .item.introItem div p{
-	font-size: 13px;
-	line-height: 18px;
-}
-
-.carousel-inner .item.introItem img{
-	float: left;
-	width: 40%;
-}
-
-.carousel-inner .item.imgGrid img{
-	float: left;
-}
-
-.carousel-inner .item.imgGrid .carousel-caption{
-	text-align: center;	
-	float: left;
-	width: 40%;
-	margin: 0px;
-	height: ;
-	color: #9a8d79;
-	text-shadow: none;
+	height: 269px;
+	overflow: hidden;
 	position: relative;
-	left: auto;
-	right: auto;
-	top: 0px;
-	padding: 40px 20px 20px;
-	
+}
+
+.tile:hover{
+	border: 1px solid #9a8d79;
+	cursor: pointer;
+}
+
+.tile > a{
+	float: left;
+	position: absolute;
+	height: 100%;
+	margin: -10px;
 }
 
 
+.tile > img{
+	width: 100%;
+}
+
+.intro.tile h3{
+	font-size: 30px;	
+	margin-bottom: 15px;
+
+}
+
+.intro.tile p{
+	font-size: 20px;	
+	line-height: 25px;
+
+}
+
+.popUp{
+	position: fixed;
+	z-index: 999;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(239,239,239,0.9);
+}
+
+.popupWrap{
+	margin: 0 auto;
+	width: 70%;
+	overflow: scroll;
+	height: 88888px;
+	overflow-y: scroll;
+}
+
+.popupLeft{
+	width: 70%;
+	float: left;
+}
+
+.popupRight{
+	width: 30%;
+	float: left;
+}
+
+.popupRight img{
+	width: 100%;
+}
+
+.popupRight h5{
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 2px;
+	margin-bottom: 7px;
+	text-align: right;
+}
+
+
+.popupRight h4{
+	font-size: 30px;	
+	margin-bottom: 15px;
+}
+
+
+.popupRight p{
+	font-size: 16px;	
+	line-height: 20px;
+}

@@ -1,599 +1,126 @@
 extends layout
 
 block content  
-  div(class="navbar navbar-default navbar-fixed-top")
-    div(class="container")
-      div(class="navbar-header")
-        button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
-          span(class="icon-bar")
-          span(class="icon-bar")
-          span(class="icon-bar")        
-        a(href="#hero" class="navbar-brand") florenciamayer          
-      div(class="navbar-collapse collapse")
-        ul(class="nav navbar-nav")
-          li(class="")
-            a(href="#bio") bio
-          li(class="")
-            a(href="#museums") museums          
-          li(class="")
-            a(href="#collection") new collection          
-          li(class="")
-            a(href="#materials") materials
-          li(class="")
-            a(href="#workshops") workshops          
-          li(class="")
-            a(href="#press") press          
-          li(class="")
-            a(href="#cv") cv
-          li(class="")
-            a(href="#contact") contact          
-            
-  div(id="hero", class="hero") 
-    img(src="images/logolarge.png")    
-
-  div(id="bio", class="meat")
-    h1 Biography
-    blockquote &ldquo;Like many other creative souls, I am constantly searching for my way in the artistic world&rdquo;
-    p Born in Buenos Aires, Argentina, Florencia Mayer is a fashion jewelry designer specializing in artisanal techniques. She combines a unique experience with a wide range of materials such as fresh pearls, recycled vintage pieces, rubber, and natural wools with an acute artistic taste. This ability allows her to create pieces that are more than just jewelry but are representations of the artist’s mind. Her pursuit for the arts, have it be dancing flamenco and ballet or creating jewelry. During her career in Argentina. Flora created elegant collections for specialty shops and Museums in Argentina often inspired by historical and romantic imagery so vibrant in my culture.
-        
-
-  div(id="museums", class="meat")
-    h1 Museums
-    p I´m selling my pieces at the shops of various museums: at the Thyssen Bornemisza Museum of Madrid , in Buenos Aires at The National Museum of Decorative Arts, at the Historical Museum of San Isidro and at the Evita´s Museum.
-    p My designs were inspired on pictures belonging to their own Collections.
-
-
-    h3 Arte Decorativo
-    p The National Museum of Decorative Art, founded in 1937, was originally the residence of the family formed by Josefina de Alvear and her husband Matias Errazuriz Ortúzar.
-    p The Alvear, based in Argentina, had an outstanding performance in the political and social development from the late eighteenth century.
-    p The marriage, interested in art and antiques took years lived in Europe to gain valuable art collection and Eastern Europe mostly comprise today the heritage of the National Museum of Decorative Art.
-    a(href="www.mnad.org") visit The National Museum of Decorative Art at mnad.org
-    
-    hr(class="clearfix")
-
-    div(id="arte", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#arte" data-slide-to="0" class="active")
-        li(data-target="#arte", data-slide-to="1")
-        li(data-target="#arte", data-slide-to="2")
-        li(data-target="#arte", data-slide-to="3")
-        li(data-target="#arte", data-slide-to="4")
-        li(data-target="#arte", data-slide-to="5")  
-        li(data-target="#arte", data-slide-to="6")
-        li(data-target="#arte", data-slide-to="7")  
-      
-      div(class="carousel-inner")
-        div(class="item active introItem")
-          div 
-            h4 "Josefina de Alvear Errazuriz" 
-            p Oil on canvas. Alto 2 m width 1.20 m
-            p Signed and dated on the right "J. Sorolla y Bastida, 1905 "
-            p Full length portrait of Dona Josefina de Alvear, who was owner of the residence. He wears a red velvet dress with fur trim and white lace sleeves. Luce an up style with a white feather trim, his gestures are elegant and look and gesture are calm and rested.
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina.jpg", alt="")
-          h5 Sorolla y Bastida, Joaquín (1863-1923)          
-
-        div(class="item imgGrid")          
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-1.jpeg", alt="")
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-2.jpeg", alt="")          
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-3.jpeg", alt="")                
-          p(class="carousel-caption") Tail threading necklace with glass beads  woven flowers with fresh pearls and  ribbons and gold organza knots
-      
-        div(class="item introItem")
-          div 
-            h4 Geraldy, Marie Thérèse
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy.jpg", alt="")
-          h5 Tatiana Zubov, Portrait
-
-        div(class="item imgGrid")          
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-2.jpeg", alt="")          
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-3.jpeg", alt="")                
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-1.jpeg", alt="")
-          p(class="carousel-caption") Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
-
-        div(class="item introItem")
-          div 
-            h4 'Coromandel' Folding Screen
-            p Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
-          img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen.jpg", alt="")
-          h5 Lacquered wood, China, Kang Hi Period, (1862-1722)
-
-        div(class="item imgGrid")
-          img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-2.jpeg", alt="")
-          img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-1.jpeg", alt="")                                    
-          p(class="carousel-caption") Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
-
-        div(class="item introItem")
-          div 
-            h4 Dance Hall            
-          img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall.jpg", alt="")          
-
-        div(class="item imgGrid")
-          img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-1.jpeg", alt="")
-          img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-2.jpeg", alt="")                                    
-          p(class="carousel-caption") Dithering necklace with beads and tail threading with glass beads.
-
-
-
-      a(class="left carousel-control", href="#arte" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#arte", data-slide="next")
-        span(class="icon-next")
-      
-
-    h3 Thyssen
-    p I´m selling my pieces at the shops of various museums: at the Thyssen Bornemisza Museum of Madrid , in Buenos Aires at The National Museum of Decorative Arts, at the Historical Museum of San Isidro and at the Evita´s Museum.
-
-
-    div(id="thyssen", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#arte" data-slide-to="0" class="active")
-        li(data-target="#arte", data-slide-to="1")
-        li(data-target="#arte", data-slide-to="2")
-        li(data-target="#arte", data-slide-to="3")
-        li(data-target="#arte", data-slide-to="4")
-        li(data-target="#arte", data-slide-to="5")  
-        li(data-target="#arte", data-slide-to="6")
-        li(data-target="#arte", data-slide-to="7")  
-      
-      div(class="carousel-inner")
-        div(class="item active introItem")
-          div 
-            h4 "Josefina de Alvear Errazuriz" 
-            p Oil on canvas. Alto 2 m width 1.20 m
-            p Signed and dated on the right "J. Sorolla y Bastida, 1905 "
-            p Full length portrait of Dona Josefina de Alvear, who was owner of the residence. He wears a red velvet dress with fur trim and white lace sleeves. Luce an up style with a white feather trim, his gestures are elegant and look and gesture are calm and rested.
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina.jpg", alt="")
-          h5 Sorolla y Bastida, Joaquín (1863-1923)          
-
-        div(class="item imgGrid")          
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-1.jpeg", alt="")
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-2.jpeg", alt="")          
-          img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-3.jpeg", alt="")                
-          p(class="carousel-caption") Tail threading necklace with glass beads  woven flowers with fresh pearls and  ribbons and gold organza knots
-      
-        div(class="item introItem")
-          div 
-            h4 Geraldy, Marie Thérèse
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy.jpg", alt="")
-          h5 Tatiana Zubov, Portrait
-
-        div(class="item imgGrid")          
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-2.jpeg", alt="")          
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-3.jpeg", alt="")                
-          img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-1.jpeg", alt="")
-          p(class="carousel-caption") Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
-
-        div(class="item introItem")
-          div 
-            h4 'Coromandel' Folding Screen
-            p Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
-          img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen.jpg", alt="")
-          h5 Lacquered wood, China, Kang Hi Period, (1862-1722)
-
-        div(class="item imgGrid")
-          img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-2.jpeg", alt="")
-          img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-1.jpeg", alt="")                                    
-          p(class="carousel-caption") Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
-
-        div(class="item introItem")
-          div 
-            h4 Dance Hall            
-          img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall.jpg", alt="")          
-
-        div(class="item imgGrid")
-          img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-1.jpeg", alt="")
-          img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-2.jpeg", alt="")                                    
-          p(class="carousel-caption") Dithering necklace with beads and tail threading with glass beads.         
-
-      a(class="left carousel-control", href="#thyssen" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#thyssen", data-slide="next")
-        span(class="icon-next")
-
-
-    h3 Beccar Varela
-    p Beccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar VarelaBeccar Varela
-
-    div(id="beccar", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#beccar" data-slide-to="0" class="active")
-        li(data-target="#beccar" data-slide-to="1")
-        li(data-target="#beccar" data-slide-to="2")
-        li(data-target="#beccar" data-slide-to="3")
-      
-      div(class="carousel-inner")
-        div(class="item active")
-          div 
-            h4 this si the title of the piece
-            p this is the destiocng og the piece
-            img(src="http://placehold.it/340x500", alt="")
-          div(class="carousel-caption")
-            slide 1      
-
-        div(class="item")          
-          img(src="http://placehold.it/900x500", alt="")
-          div(class="carousel-caption")
-            slide this is the photo       
-
-        div(class="item")          
-          img(src="http://placehold.it/900x500", alt="")
-          div(class="carousel-caption")
-            slide this is the asdfsadfasdf
-
-        div(class="item")
-          div 
-            h4 this si the title of the piece
-            p this is the destiocng og the piece
-            img(src="http://placehold.it/340x500", alt="")
-          div(class="carousel-caption")
-            slide 2         
-
-      a(class="left carousel-control", href="#beccar" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#beccar", data-slide="next")
-        span(class="icon-next")
-    
-    hr
-
-    div(id="evita", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#arte" data-slide-to="0" class="active")
-        li(data-target="#arte", data-slide-to="1")
-        li(data-target="#arte", data-slide-to="2")
-        li(data-target="#arte", data-slide-to="3")
-        li(data-target="#arte", data-slide-to="4")
-        li(data-target="#arte", data-slide-to="5")  
-        li(data-target="#arte", data-slide-to="6")
-        li(data-target="#arte", data-slide-to="7")  
-      
-      div(class="carousel-inner")
-        div(class="item active introItem")
-          div 
-            h4 Evita
-            p Evita, the famous First Lady, wife of President Juan Domingo Perón, is best known by Madonna´s versión of “Don´t Cry for me Argentina”, was and is still loved and adored by many Argentinians.
-            p This Museum has a great collection of Evita´s original dresses and gowns, shoes and jewelry.
-            p These pieces of mine, sold at the Museum´s shop, are inspired by the front page picture of Evita´s book of Reading for school children “The Reason of my life”.
-            p Dithering necklace, earrings and brooch with woven flowers with glass beads and gold and silver knots
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita.jpg", alt="")
-          h5 La razón de mi vida, Book Cover, (1951)          
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-1.jpg", alt="")          
-          p(class="carousel-caption") Dithering necklace, earrings and brooch with woven flowers with glass beads and gold and silver knots
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-2.jpg", alt="")          
-          
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-3.jpg", alt="")          
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-4.jpg", alt="")          
-      
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-5.jpg", alt="")          
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-6.jpg", alt="")          
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/arte/evita/evita-7.jpg", alt="")          
-
-      a(class="left carousel-control", href="#evita" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#evita", data-slide="next")
-        span(class="icon-next")
-
-
-
-    h3 Wussmann Shop
-    p For my designs for the museums I chose interesting women, who have in common courage and a great personality, such as Evita Perón. I find it super exciting to make a research of the historical moment and of the life of the character I choose.  I try to capture and interpret her inner essence, her feelings, her passions and ideals and show them in my designs, like a painter in a portrait.  For these designs I use quite a variety of materials, some of them non conventional like cotton yarn.
-
-    div(id="women", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#women" data-slide-to="0" class="active")
-        li(data-target="#women", data-slide-to="2")
-        li(data-target="#women", data-slide-to="3")
-        li(data-target="#women", data-slide-to="4")
-        li(data-target="#women", data-slide-to="5")
-        li(data-target="#women", data-slide-to="6")
-        li(data-target="#women", data-slide-to="7")        
-        
-      
-      div(class="carousel-inner")
-        div(class="item active introItem")
-          div 
-            h4 "Marlene" Dietrich
-            p Blonde venus was a German-born American actress and singer.            
-          img(src="/images/loader.gif" data-src="/images/women/blonde-venus-marlene-dietrich.jpg", alt="")
-          
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/women/Marlene.jpg", alt="")
-          div(class="carousel-caption") Dithering necklace with woven spheres with glass beads and white, gold and silver  threads knots.
-
-        div(class="item introItem")
-          div 
-            h4 Pina Baush
-            p Was a German performer of modern dance, choreographer, dance teacher and ballet director. (1940 – 2009) 
-          img(src="/images/loader.gif" data-src="/images/women/pina-2.jpg", alt="")
-          
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/women/pina-1.jpg", alt="")
-          div(class="carousel-caption") Dithering necklace with woven flowers with glass beads and cotton with silk threads knots.
-
-        div(class="item introItem")
-          div 
-            h4 Valkyrie
-            p In Norse mythology, a valkyrie (from Old Norsevalkyrja "chooser of the slain") is one of a host of female figures who decide which soldiers die in battle and which live.
-          img(src="/images/loader.gif" data-src="/images/women/Valkyrie.jpg", alt="")
-          
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/women/Valkyrie-1.jpg", alt="")
-          div(class="carousel-caption") Tail threading necklace with glass beads and fresh pearls, and Gold Cordon
-
-        div(class="item introItem")
-          div 
-            h4 Elisabeth of Austria, Sissi
-            p Was Empress of Austria and Queen of Hungary, as wife of Franz Joseph I. (1837 – 1898) 
-          img(src="/images/loader.gif" data-src="/images/women/elizabeth.jpg", alt="")
-          
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/women/Sissie.jpg", alt="")
-          div(class="carousel-caption") Tail threading necklace  with glass beads and fresh pearls, woven flower with fresh pearls . White and silver thread knots.
-
-
-      a(class="left carousel-control", href="#women" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#women", data-slide="next")
-        span(class="icon-next")
-
-
-  div(id="collection", class="meat")
-    h1 2013 Collection: Indian Mirrors
-    p I recently began spending time in New York to create a new collection entitled "Indian Mirrors", a "Reflection of your Soul". 
-    p It is inspired by the ancient Indian concept for the wisdom obtained when we look inward and learn from being with oneself.     
-    
-    div(id="indian", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#indian" data-slide-to="0" class="active")
-        li(data-target="#indian", data-slide-to="1")
-        li(data-target="#indian", data-slide-to="2")
-        li(data-target="#indian", data-slide-to="3")
-        li(data-target="#indian", data-slide-to="4")
-        li(data-target="#indian", data-slide-to="5")
-        li(data-target="#indian", data-slide-to="6")
-        li(data-target="#indian", data-slide-to="7")
-        li(data-target="#indian", data-slide-to="8")
-        li(data-target="#indian", data-slide-to="9")
-        li(data-target="#indian", data-slide-to="10")
-        li(data-target="#indian", data-slide-to="11")
-        li(data-target="#indian", data-slide-to="12")
-        li(data-target="#indian", data-slide-to="13")
-
-      
-      div(class="carousel-inner")    
-        div(class="item active")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Tara-Star.jpg", alt="")
-          div(class="carousel-caption") Tara "Star" Necklace with vintage crystals and black crystals  woven sphere. 2 options to wear, front and back.
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Abha-Light.jpg", alt="")
-          div(class="carousel-caption") Abha "Light" Necklace with fresh pearls, vintage crystals and black crystals woven sphere 2 opctions to wear, long and short.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Abha-Light-2.jpg", alt="")          
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Akanksha-Wish.jpg", alt="")
-          div(class="carousel-caption") Akanksha "Wish" Necklace with fresh pearls, vintage crystals and baby fresh pearls woven sphere.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Akanksha-Wish-2.jpg", alt="")
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Ananda-Happiness.jpg", alt="")
-          div(class="carousel-caption") Ananda "Happiness" Tie necklace with  small crystals, baby pearls, fresh pearls, vintage crystals and baby fresh pearls woven sphere. 2 options to wear, front and back.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Anila-Wind.jpg", alt="")
-          div(class="carousel-caption") Anila "Wind" Independent threading with black fresh pearls, vintage crystals and baby fresh pearls woven sphere. 3 options to wear, front,back and as a bracelet.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Anila-Wind-2.jpg", alt="")
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Asha-Hope.jpg", alt="")
-          div(class="carousel-caption") Asha "Hope" Necklace with fresh pearls, vintage crystals and baby fresh pearls woven sphere.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Indira-Beauty.jpg", alt="")
-          div(class="carousel-caption") Indira"Beauty" Necklace with  baby fresh pearls ,vintage crystals and black crystals woven sphere. 2 options desing to wear.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Kailash-Crystal.jpg", alt="")
-          div(class="carousel-caption") Kailash "Crystal" Necklace with vintage crystals and baby fresh pearls woven sphere. 2 options desing to wear.
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Indu-Bright-drop-1.jpg", alt="")
-          div(class="carousel-caption") Indu" Bright drop" Little brooch with vintage crystals and woven sphere. Different options desing to wear.
-        
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Indu-Bright-drop-2.jpg", alt="")
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/indian-mirrors/Indu-Bright-drop-3.jpg", alt="")
-
-
-      a(class="left carousel-control", href="#indian" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#indian", data-slide="next")
-        span(class="icon-next")
-
-
-  div(id="materials", class="meat")
-    h1 Finding Materials
-    p I have always been attracted to beautiful hand made pieces .
-    p My passion for necklaces started by chance. When I began to create pieces and connect with the materials, I realized and understood the value of “creating” a new piece in connection with the person that would eventually wear it.
-    p With my creations, I’m looking forward to awake the senses and generate a feeling of pleasure when wearing a piece.
-    p My designs are mainly based on handy made forms creating ethereal sensations of movements through different textures and colours given by the materials I use (semiprecious stones, river pearls, mother of the pearls, passamanerie and organdy laces, and recycled antique jewelry.)
-    p I have a passion for finding new materials and creating designs with them.
-    p I´ve investigated and experimented with different materials, from buttons (galatit paste) to happy birthday balloons. I´ve arrived to the conclusion that I consider it important to appreciate our own natural resources and, on the other hand, create an environmental conscience besides thinking in their future sustenance.    
-
-
-    div(id="materialsSlider", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#materialsSlider" data-slide-to="0" class="active")
-        li(data-target="#materialsSlider", data-slide-to="1")
-        li(data-target="#materialsSlider", data-slide-to="2")
-        li(data-target="#materialsSlider", data-slide-to="3")
-        li(data-target="#materialsSlider", data-slide-to="4")
-        li(data-target="#materialsSlider", data-slide-to="5")
-        li(data-target="#materialsSlider", data-slide-to="6")
-        li(data-target="#materialsSlider", data-slide-to="7")
-        li(data-target="#materialsSlider", data-slide-to="8")
-        li(data-target="#materialsSlider", data-slide-to="9")
-        li(data-target="#materialsSlider", data-slide-to="10")
-        li(data-target="#materialsSlider", data-slide-to="11")
-        li(data-target="#materialsSlider", data-slide-to="12")
-        li(data-target="#materialsSlider", data-slide-to="13")
-
-      
-      div(class="carousel-inner")    
-        div(class="item active")          
-          img(src="/images/loader.gif" data-src="/images/materials/organza-2.jpg", alt="")
-          div(class="carousel-caption") Flower, Woven FLower Organza Ribbon Knots
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/organza-3.jpg", alt="")
-        
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/organza-5.jpg", alt="")
-        
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/organza-6.jpg", alt="")
-        
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/organza-7.jpg", alt="")
-
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/buttons.jpg", alt="")
-          div(class="carousel-caption") Rouge. Buttons and Organza Ribbon. Tail threading necklace with glass beads and buttons 
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/buttons-1.jpg", alt="")
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/buttons-2.jpg", alt="")
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/buttons-3.jpg", alt="")
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/buttons-4.jpg", alt="")
-        
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/ballons-1.jpg", alt="")
-          div(class="carousel-caption") "Happy" Balloons
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/ballons-2.jpg", alt="")        
-
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/north-argentina.jpg", alt="")
-          div(class="carousel-caption") North Argentina
-         
-        div(class="item")          
-          img(src="/images/loader.gif" data-src="/images/materials/north-argentina-1.jpg", alt="")        
-        
-
-      a(class="left carousel-control", href="#materialsSlider" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#materialsSlider", data-slide="next")
-        span(class="icon-next")
-
-  div(id="workshops", class="meat")
-    h1 Jewelry Workshops
-    p The workshops started because I liked the idea of accompanying people whether adults or children to discover their own creativity.
-    p It was something that was born from my own experience of creativity.
-    p I think it's wonderful what everyone can create, recycle or design if they discover their inner world.
-    p That is the intention of my workshops beyond the knowledge and techniques that I can teach them.
-    p I love working with children because they are very sweet and they enjoy a lot and are surprised when they discover and create. They are happy when they see that they can assemble pieces like necklaces and later take them to their homes with them.
-    p It's nice and very funny.
-    p The idea of the workshop is to teach girls accessories for a super fun way to create and build their own accessories and bijou according to their age.
-    p It is ideal for creating and fun.
-
-
-    div(id="workshopsSlider", class="carousel slide")  
-      ol(class="carousel-indicators")
-        li(data-target="#workshopsSlider" data-slide-to="0" class="active")
-        li(data-target="#workshopsSlider", data-slide-to="1")
-        li(data-target="#workshopsSlider", data-slide-to="2")        
-        li(data-target="#workshopsSlider", data-slide-to="3")
-        li(data-target="#workshopsSlider", data-slide-to="4")
-        li(data-target="#workshopsSlider", data-slide-to="5")        
-      
-      div(class="carousel-inner")    
-        div(class="item active")          
-          img(src="images/workshop/workshop-1.jpg")
-          div(class="carousel-caption")
-            slide this is the photo  
-
-        div(class="item")          
-          img(src="images/workshop/workshop-4.jpg")
-          div(class="carousel-caption")
-            slide waefasdfasdf 
-
-        div(class="item")          
-          img(src="images/workshop/workshop-5.jpg")
-          div(class="carousel-caption")
-            slide waefasdfasdf 
-
-        div(class="item")          
-          img(src="images/workshop/workshop-6.jpg")
-          div(class="carousel-caption")
-            slide waefasdfasdf 
-
-        div(class="item")          
-          img(src="images/workshop/workshop-7.jpg")
-          div(class="carousel-caption")
-            slide waefasdfasdf 
-
-        div(class="item")          
-          img(src="images/workshop/workshop-8.jpg")
-          div(class="carousel-caption")
-            slide waefasdfasdf 
-
-
-      a(class="left carousel-control", href="#workshopsSlider" data-slide="prev")
-        span(class="icon-prev")  
-      
-      a(class="right carousel-control", href="#workshopsSlider", data-slide="next")
-        span(class="icon-next")
-
-
-
-  div(id="press", class="meat")
-    h1 Press
+  div(class="navbar")    
     ul
-      li 
-        h2 Press Titles
-        p some text abotu the press
-        img(src="images/7816_164094793972_3644527_n.jpg")
+      li(class="")
+        a(href="#bio") bio
+      li(class="")
+        a(href="#museums") museums
+      li(class="")
+        a(href="#collection") new collection
+      li(class="")
+        a(href="#materials") materials
+      li(class="")
+        a(href="#workshops") workshops
+      li(class="")
+        a(href="#press") press
+      li(class="")
+        a(href="#cv") cv
+      li(class="")
+        a(href="#contact") contact
+  
+  article(class="clearfix")
+    div(id="hero", class="section hero active") 
+      img(src="images/logolarge.png")    
 
-  div(id="cv", class="meat")
-    h1 CV
-    ul 
-      li 
-        h2 1978
-        p mething that was born from my own experience of creativity. p I think it's wonderful what everyone can create, recycle or
+    div(id="bio", class="section")
+      h1 Biography    
+      p Born in Buenos Aires, Argentina, Florencia Mayer is a fashion jewelry designer specializing in artisanal techniques. She combines a unique experience with a wide range of materials such as fresh pearls, recycled vintage pieces, rubber, and natural wools with an acute artistic taste. This ability allows her to create pieces that are more than just jewelry but are representations of the artist’s mind. Her pursuit for the arts, have it be dancing flamenco and ballet or creating jewelry. During her career in Argentina. Flora created elegant collections for specialty shops and Museums in Argentina often inspired by historical and romantic imagery so vibrant in my culture.
+          
 
-  div(id="contact", class="meat")
-    h1 contact    
+    div(id="museums", class="section")
+      h1 Museums
+      p I´m selling my pieces at the shops of various museums: at the Thyssen Bornemisza Museum of Madrid , in Buenos Aires at The National Museum of Decorative Arts, at the Historical Museum of San Isidro and at the Evita´s Museum.
+      p My designs were inspired on pictures belonging to their own Collections.
+
+    
+ 
+    div(class="intro tile")
+      h3 Arte Decorativo
+      p The National Museum of Decorative Art, founded in 1937, was originally the residence of the family formed by Josefina de Alvear and her husband Matias Errazuriz Ortúzar.
+      p The Alvear, based in Argentina, had an outstanding performance in the political and social development from the late eighteenth century.
+      p The marriage, interested in art and antiques took years lived in Europe to gain valuable art collection and Eastern Europe mostly comprise today the heritage of the National Museum of Decorative Art.
+      a(href="www.mnad.org") visit The National Museum of Decorative Art at mnad.org
+        
+    div(class="item tile")      
+      a(class="clearfix", href="#josefina")
+        img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-1.jpeg", alt="")
+      div(id="josefina", class="popUp", style="display:none;")
+        button(class="closeTile") X
+        div(class="popupWrap") 
+          div(class="popupLeft")          
+            img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-1.jpeg", alt="")
+            img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-2.jpeg", alt="")
+            img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina-3.jpeg", alt="")
+
+          div(class="popupRight")
+            img(src="/images/loader.gif" data-src="/images/arte/josefina/josefina.jpg", alt="")
+            h5 Sorolla y Bastida, Joaquín (1863-1923)
+            h4 "Josefina de Alvear Errazuriz" 
+            p Oil on canvas. Alto 2 m width 1.20 m
+            p Signed and dated on the right "J. Sorolla y Bastida, 1905 "
+            p Full length portrait of Dona Josefina de Alvear, who was owner of the residence. He wears a red velvet dress with fur trim and white lace sleeves. Luce an up style with a white feather trim, his gestures are elegant and look and gesture are calm and rested.        
+
+            h5 materials used:
+            p Tail threading necklace with glass beads  woven flowers with fresh pearls and  ribbons and gold organza knots          
+
+    div(class="item tile")      
+      a(class="clearfix", href="#geraldy")
+        img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-2.jpeg", alt="")  
+      
+      div(id="geraldy", class="popUp", style="display:none;")
+        button(class="closeTile") X
+        
+        div(class="popupWrap") 
+          div(class="popupLeft")          
+            img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-2.jpeg", alt="")
+            img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-3.jpeg", alt="")                
+            img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy-1.jpeg", alt="")
+        
+
+          div(class="popupRight")
+            img(src="/images/loader.gif" data-src="/images/arte/geraldy/geraldy.jpg", alt="")
+            h5 Tatiana Zubov, Portrait
+            h4 Geraldy, Marie Thérèse
+            
+            h4 materials used:
+            p Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
+
+    div(class="item tile")      
+      a(class="clearfix", href="#folding") 
+        img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-2.jpeg", alt="")
+
+      div(id="folding", class="popUp", style="display:none;")
+        button(class="closeTile") X
+        div(class="popupWrap")     
+          div(class="popupLeft")     
+            img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-2.jpeg", alt="")
+            img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen-1.jpeg", alt="")                                         
+
+          div(class="popupRight")
+            img(src="/images/loader.gif" data-src="/images/arte/folding-screen/folding-screen.jpg", alt="")
+            h5 Lacquered wood, China, Kang Hi Period, (1862-1722)
+            
+            h4 'Coromandel' Folding Screen
+            h5 materials used:
+            p Tail threading necklace with glass beads and  woven  stone flowers with knots  organza ribbon knots
+
+    div(class="item tile")      
+      a(class="clearfix", href="#dance")
+        img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-1.jpeg", alt="")  
+      
+      div(id="dance", class="popUp", style="display:none;")
+        button(class="closeTile") X
+        div(class="popupWrap")
+          div(class="popupLeft")
+            img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-1.jpeg", alt="")      
+            img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-2.jpeg", alt="")      
+            img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-3.jpeg", alt="")      
+            img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall-4.jpeg", alt="")      
+            
+          div(class="popupRight")
+            img(src="/images/loader.gif" data-src="/images/arte/dance-hall/dance-hall.jpg", alt="")                  
+            h4 Dance Hall                      
+            h5 materials used:
+            p Dithering necklace with beads and tail threading with glass beads.
