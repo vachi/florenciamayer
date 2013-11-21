@@ -36,7 +36,7 @@
         });
 
         $(".section").css({            
-            minHeight: height-100
+            minHeight: height
         });
 
         $(".popUp").css({            
