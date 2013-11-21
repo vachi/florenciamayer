@@ -144,7 +144,7 @@ article .section.active{
 }
 
 
-.tile > img{
+.tile > a img{
 	width: 100%;
 }
 
@@ -180,6 +180,13 @@ article .section.active{
 	width: 70%;
 	float: left;
 }
+
+.popupLeft img{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
 
 .popupRight{
 	width: 30%;
