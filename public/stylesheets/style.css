@@ -143,7 +143,15 @@ article .section.active{
 .intro.tile{
 	width: 93.5%;
 	max-height: 450px;
+}
 
+.intro.tile.main{
+	background-color: #fbf9f7;
+	border: 1px solid #cec7be;	
+}
+
+.intro.tile.main:hover{
+	border: 1px solid #cec7be;	
 }
 
 .intro.tile.short{
