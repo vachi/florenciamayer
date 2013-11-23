@@ -209,6 +209,10 @@ article .section.active{
 	width: 100%;
 }
 
+.tile > img{
+	width: 100%;
+}
+
 
 .intro.tile h3{
 	font-size: 30px;	
@@ -310,3 +314,82 @@ button.closeTile:hover{
 	cursor: pointer;
 	opacity: 1;
 }
+
+#cvText{
+	min-height: 900px;
+	max-height: 900px;
+	
+}
+
+#contact{
+	margin-bottom: 40px;
+}
+
+#contact .formGroup{
+	float: left;
+	width: 100%;
+	
+	
+}
+
+#contact label{
+	color: #9a8d79;	
+	font-size: 16px;
+	width: 100px;
+	display: block;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#contact input{
+	color: #9a8d79;	
+	font-size: 14px;
+	width: 100px;
+	display: block;
+	float: left;
+	text-align: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-family: Georgia, serif;
+	background: none;
+	border: 1px solid #9a8d79;
+	
+}
+
+#contact input.button{
+	color: #9a8d79;
+	width: 100px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: none;
+	border: 1px solid #9a8d79;
+	font: 16px/20px Georgia, serif;
+	margin-left: 110px;
+}
+
+#contact input.button:hover{
+	color: #6c6254;
+	border: 1px solid #6c6254;
+	cursor: pointer;
+}
+
+#contact textarea{
+	color: #9a8d79;	
+	font-size: 14px;
+	width: 200px;
+	height: 130px;
+	display: block;
+	float: left;
+	text-align: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-family: Georgia, serif;
+	background: none;
+	border: 1px solid #9a8d79;
+}
+
