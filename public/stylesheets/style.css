@@ -3,6 +3,8 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+
+
 @font-face {
 		font-family: 'Modern-Regular', 'Georgia', serif;
 		src: url('../fonts/modernno20.eot');
@@ -53,8 +55,11 @@ h1, h2,h3,h4,h5, blockquote{
 }
 
 article{
-	margin-left: 180px;
-	overflow: hidden;
+	margin-left: 180px;	
+}
+
+body.noScroll{
+	overflow: hidden !important;
 }
 
 article > div{
@@ -66,6 +71,9 @@ article .section{
 	border-bottom: 1px solid #efefef;
 	margin-bottom: 20px;
 	opacity: .4;
+	float: left;
+	margin-left: 1%;
+	padding-top: 20px;
 }
 
 article .section.active{
@@ -126,15 +134,52 @@ article .section.active{
 	border: 1px solid #efefef;
 	display: inline;
 	float: left;
-	height: 269px;
+	min-height: 269px;
+	max-height: 269px;
 	overflow: hidden;
 	position: relative;
 }
+
+.intro.tile{
+	width: 93.5%;
+	max-height: 450px;
+
+}
+
+.intro.tile.short{
+	min-height: 50px !important;
+	max-height: 50px !important;
+}
+
+
+.intro.tile p{
+	margin-bottom: 10px;
+}
+
+
+.tile.empty{
+	border: 1px solid #ffffff;	
+}
+
 
 .tile:hover{
 	border: 1px solid #9a8d79;
 	cursor: pointer;
 }
+.tile.empty:hover{
+	border: 1px solid #ffffff;
+	cursor: auto;	
+}
+
+.tile.intro{
+	border: 1px solid #efefef;
+	cursor: pointer;
+}
+.tile.intro:hover{
+	border: 1px solid #efefef;
+	cursor: auto;	
+}
+
 
 .tile > a{
 	float: left;
@@ -143,10 +188,19 @@ article .section.active{
 	margin: -10px;
 }
 
+.tile.intro > a{
+	float: none;
+	position: relative;
+	height: auto;
+	margin: 0px;
+}
+
+
 
 .tile > a img{
 	width: 100%;
 }
+
 
 .intro.tile h3{
 	font-size: 30px;	
@@ -165,20 +219,21 @@ article .section.active{
 	z-index: 999;
 	left: 0px;
 	top: 0px;
-	background-color: rgba(239,239,239,0.9);
+	background-color: rgba(239,239,239,1);
+	overflow-y: scroll;	
 }
 
 .popupWrap{
 	margin: 0 auto;
-	width: 70%;
-	overflow: scroll;
-	height: 88888px;
-	overflow-y: scroll;
+	width: 70%;	
+	padding-bottom: 20px;
+	
 }
 
 .popupLeft{
 	width: 70%;
 	float: left;
+	margin-top: 20px;
 }
 
 .popupLeft img{
@@ -187,10 +242,15 @@ article .section.active{
 	margin-bottom: 10px;
 }
 
+.popupLeft img:last-child{
+	margin-bottom: 40px;
+}
+
 
 .popupRight{
-	width: 30%;
+	width: 30%;	
 	float: left;
+	margin-top: 20px;
 }
 
 .popupRight img{
@@ -206,6 +266,12 @@ article .section.active{
 }
 
 
+.popupRight h3{
+	font-size: 20px;	
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
 .popupRight h4{
 	font-size: 30px;	
 	margin-bottom: 15px;
@@ -215,4 +281,24 @@ article .section.active{
 .popupRight p{
 	font-size: 16px;	
 	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+button.closeTile{
+	border: none;
+	background: none;
+	position: fixed;
+	left: 5%;
+	top: 20px;
+	font-size: 40px;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	text-transform: uppercase;
+	opacity: .4;
+}
+
+button.closeTile:hover{
+	cursor: pointer;
+	opacity: 1;
 }

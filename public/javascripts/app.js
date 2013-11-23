@@ -14,10 +14,12 @@
 
     $(".tile > a").click( function(){
         link = $(this).attr("href");
+        $("body").addClass("noScroll");
         $(link).show().addClass("open");
     });
 
     $("button.closeTile").click( function(){        
+        $("body").removeClass("noScroll");
         $(".popUp").removeClass("open").hide();
     });
         
