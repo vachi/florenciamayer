@@ -28,29 +28,28 @@
 
             if(imgHeight>height){                
                 $(this).css({
-                    height: height - 100,
-                    width: ((height-100)*imgWidth)/imgHeight,
-                    marginBottom: (height)-(height-120)
-
-                    // width: "100%"
+                    height: height - 200,
+                    width: ((height-200)*imgWidth)/imgHeight,
+                    marginBottom: (100)                    
                 });    
             }
             else{
                 $(this).css({
-                    marginBottom: height - imgHeight - 20
+                    marginBottom: height - imgHeight - 120
                 });
             }
 
             $(this).after("<button>down</button>");
-
-
-        });
+        });        
 
         $(link+' .popupLeft button').click(function(){
             console.log($(this).next("img").position().top+20)
+            var index = $(link+' .popupLeft button').index(this);
+            console.log(index);
+            // if(index>1){index=index-1}           
             $(link).animate({
-                scrollTop: $(this).next("img").position().top+20
-            }, 500);
+                scrollTop: ((index+1)*height)-20
+            }, 500);            
         });
 
         // $(link+' .popupLeft img').css({

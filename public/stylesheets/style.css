@@ -275,6 +275,28 @@ article .section.active{
 .popupLeft img:last-child{
 	margin-bottom: 40px;
 }
+.popupLeft button{
+	height: 100px;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	text-indent: 999999em;
+	overflow: hidden;
+	background: url(../images/arrow.png) center center no-repeat;
+}
+
+.popupLeft button:focus, .popupLeft button:active{
+	outline:none;
+	border: none;
+	
+}
+
+.popupLeft button:last-child{
+	opacity: 0;	
+	height: 60px;
+}
 
 
 .popupRight{
