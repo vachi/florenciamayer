@@ -24,10 +24,33 @@
 
         $(link+' .popupLeft img').each(function(){
             var imgHeight = $(this).height();
-            $(this).css({
-                marginBottom :height - imgHeight - 20
-            });
+            var imgWidth = $(this).width();
 
+            if(imgHeight>height){                
+                $(this).css({
+                    height: height - 100,
+                    width: ((height-100)*imgWidth)/imgHeight,
+                    marginBottom: (height)-(height-120)
+
+                    // width: "100%"
+                });    
+            }
+            else{
+                $(this).css({
+                    marginBottom: height - imgHeight - 20
+                });
+            }
+
+            $(this).after("<button>down</button>");
+
+
+        });
+
+        $(link+' .popupLeft button').click(function(){
+            console.log($(this).next("img").position().top+20)
+            $(link).animate({
+                scrollTop: $(this).next("img").position().top+20
+            }, 500);
         });
 
         // $(link+' .popupLeft img').css({
