@@ -99,6 +99,16 @@ article .section.active{
 
 .hero{
 	text-align: center;
+	background: #f4ddbe; /* Old browsers */
+background: -moz-linear-gradient(top, #f4ddbe 0%, #f7d8c6 40%, #f0cdb7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4ddbe), color-stop(40%,#f7d8c6), color-stop(100%,#f0cdb7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4ddbe', endColorstr='#f0cdb7',GradientType=0 ); /* IE6-9 */
+margin: 0px !important;
+width: 100%;
 }
 
 #hero h1{
@@ -106,6 +116,7 @@ article .section.active{
 	font-size: 60px;
 	font-weight: 100;
 	margin-top: 20%;
+	color: #333;
 }
 
 @media (max-width: 460px) {
@@ -154,6 +165,28 @@ article .section.active{
 	overflow: hidden;
 	position: relative;
 }
+
+.tile > a button{
+	position: absolute;	
+	top: 30%;
+	opacity: 0;	
+	left: 0px;
+	border: none;
+	background: rgba(255,255,255,.6);
+	width: 100%;
+	line-height: 100px;
+	color: #333;
+	font-family: Georgia, serif;
+}
+
+.tile > a:hover button{
+	opacity: 1;
+}
+
+.tile > a button:hover{
+	cursor: pointer;
+}
+
 
 .intro.tile{
 	width: 93.5%;

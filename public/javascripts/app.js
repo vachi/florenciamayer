@@ -3,7 +3,7 @@
         $('.navbar a').click(function(e){
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: $( $.attr(this, 'href') ).offset().top
+                scrollTop: $( $.attr(this, 'href') ).offset().top-20
             }, 500);
             $(".navbar li").removeClass("active");            
             $(this).parent("li").addClass("active");
@@ -12,7 +12,7 @@
     });
     
     $("img").unveil();
-
+    $(".tile > a").append("<button>view more</button>");
     $(".tile > a").click( function(){
         link = $(this).attr("href");
         $("body").addClass("noScroll");
