@@ -1,12 +1,13 @@
 !function ($) {
     $(function(){
-        $('.navbar a').click(function(){
+        $('.navbar a').click(function(e){
+            e.preventDefault();
             $('html, body').animate({
                 scrollTop: $( $.attr(this, 'href') ).offset().top
             }, 500);
-            $(".navbar li").removeClass("active");
+            $(".navbar li").removeClass("active");            
             $(this).parent("li").addClass("active");
-            return false;
+            // return false;
         });
     });
     
@@ -16,6 +17,24 @@
         link = $(this).attr("href");
         $("body").addClass("noScroll");
         $(link).show().addClass("open");
+
+        var theWindow = $(window),
+            width = theWindow.width(),
+            height = theWindow.height();
+
+        $(link+' .popupLeft img').each(function(){
+            var imgHeight = $(this).height();
+            $(this).css({
+                marginBottom :height - imgHeight - 20
+            });
+
+        });
+
+        // $(link+' .popupLeft img').css({
+        //     marginBottom: 100
+        // })
+
+
     });
 
     $("button.closeTile").click( function(){        
