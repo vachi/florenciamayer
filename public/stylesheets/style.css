@@ -365,11 +365,20 @@ button.closeTile:hover{
 	margin-bottom: 40px;
 }
 
+#contact form{
+	float: left;
+	width: 60%;
+}
+
+
 #contact .formGroup{
 	float: left;
 	width: 100%;
-	
-	
+}
+
+#contact img{
+	float: right;
+	width: 28%;	
 }
 
 #contact label{
