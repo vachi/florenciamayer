@@ -395,6 +395,17 @@ button.closeTile:hover{
 
 #contact{
 	margin-bottom: 40px;
+		background: #f4ddbe; /* Old browsers */
+background: -moz-linear-gradient(top, #f4ddbe 0%, #f7d8c6 40%, #f0cdb7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4ddbe), color-stop(40%,#f7d8c6), color-stop(100%,#f0cdb7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f4ddbe 0%,#f7d8c6 40%,#f0cdb7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4ddbe', endColorstr='#f0cdb7',GradientType=0 ); /* IE6-9 */
+border: none;
+width: 100%;
+margin: 0px;
 }
 
 #contact form{
@@ -411,6 +422,7 @@ button.closeTile:hover{
 #contact img{
 	float: right;
 	width: 28%;	
+	margin-right: 2%;
 }
 
 #contact label{
