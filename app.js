@@ -29,23 +29,28 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/blog', routes.blog);
 
+app.use(express.bodyParser());
+app.post('/contact', function(req, res) {
+  var name = req.body.FNAME + ' ' + req.body.FNAME,
+  	  email = req.body.EMAIL,
+  	  body = req.body.BODY;
 
-var sendgrid  = require('sendgrid')(
-  process.env.SENDGRID_USERNAME,
-  process.env.SENDGRID_PASSWORD
-);
+	var sendgrid  = require('sendgrid')(
+	  process.env.SENDGRID_USERNAME,
+	  process.env.SENDGRID_PASSWORD
+	);
 
-sendgrid.send({
-  to: 'vachos@me.com',
-  from: 'florenciamayer@live.com',
-  subject: 'Hello World',
-  text: 'Sending email with NodeJS through SendGrid!'
-}, function(err, json) {
-if (err) { return console.error(err); }
-  console.log(json);
+	sendgrid.send({
+	  to: 'florenciamayer@live.com',
+	  from: email,
+	  subject: 'from ' + name + ' using contact form on florenciamayer.com',
+	  text: body
+	}, function(err, json) {
+	if (err) { return console.error(err); }
+	  console.log(json);
+	});
+
 });
-
-
 
 
 
