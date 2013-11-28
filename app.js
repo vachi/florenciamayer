@@ -48,7 +48,7 @@ app.post('/contact', function(req, res) {
 	}, function(err, json) {
 	if (err) { return console.error(err); }
 	  console.log(json);
-	  res.redirect('/thankyou');
+	  res.redirect('/thankyou#contact');
 	});
 
 });
