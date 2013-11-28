@@ -27,7 +27,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/blog', routes.blog);
+app.get('/thankyou', routes.thankyou);
 
 app.use(express.bodyParser());
 app.post('/contact', function(req, res) {
@@ -48,7 +48,7 @@ app.post('/contact', function(req, res) {
 	}, function(err, json) {
 	if (err) { return console.error(err); }
 	  console.log(json);
-	  app.send(routes.index);
+	  res.redirect('/thankyou');
 	});
 
 });

@@ -8,7 +8,7 @@ exports.index = function(req, res){
   });
 };
 
-exports.blog = function(req, res){
-  res.render('blog', {   	
+exports.thankyou = function(req, res){
+  res.render('thankyou', {   	
   });
 };
