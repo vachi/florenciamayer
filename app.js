@@ -31,7 +31,7 @@ app.get('/blog', routes.blog);
 
 
 var sendgrid  = require('sendgrid')(
-  process.env.app19440467@heroku.com,
+  process.env.SENDGRID_USERNAME,
   process.env.SENDGRID_PASSWORD
 );
 
