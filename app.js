@@ -48,6 +48,7 @@ app.post('/contact', function(req, res) {
 	}, function(err, json) {
 	if (err) { return console.error(err); }
 	  console.log(json);
+	  app.send(routes.index);
 	});
 
 });
