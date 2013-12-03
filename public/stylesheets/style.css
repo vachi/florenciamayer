@@ -166,7 +166,7 @@ width: 100%;
 	position: relative;
 }
 
-.tile > a button{
+.item.tile > a button{
 	position: absolute;	
 	top: 30%;
 	opacity: 0;	
@@ -179,11 +179,11 @@ width: 100%;
 	font-family: Georgia, serif;
 }
 
-.tile > a:hover button{
+.item.tile > a:hover button{
 	opacity: 1;
 }
 
-.tile > a button:hover{
+.item.tile > a button:hover{
 	cursor: pointer;
 }
 

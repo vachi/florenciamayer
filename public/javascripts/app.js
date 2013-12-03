@@ -12,7 +12,7 @@
     });
     
     $("img").unveil();
-    $(".tile > a").append("<button>view more</button>");
+    $(".tile:not(.intro) > a").append("<button>view more</button>");
     $(".tile > a").click( function(){
         link = $(this).attr("href");
         $("body").addClass("noScroll");
