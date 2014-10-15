@@ -41,7 +41,7 @@ app.post('/contact', function(req, res) {
 	);
 
 	sendgrid.send({
-	  to: 'florenciamayer@live.com',
+	  to: 'artfloramayer@gmail.com',
 	  from: email,
 	  subject: 'from ' + name + ' using contact form on florenciamayer.com',
 	  text: body
